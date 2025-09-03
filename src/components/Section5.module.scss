@@ -155,6 +155,12 @@
   .wrap {
     padding: 4rem 1.25rem 0;
   }
+  .titleBox {
+    padding-bottom: 3rem;
+  }
+  .lineUp {
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+  }
   .shoppingBag {
     transform: translate(-180%, -90%);
   }

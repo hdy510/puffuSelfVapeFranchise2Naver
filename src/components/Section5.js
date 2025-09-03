@@ -5,8 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 import lineUp from "../resources/lineUp.png";
-import modeling from "../resources/modeling.png";
-import brandList from "../resources/brandList.png";
+import shoppingBag from "../resources/shoppingBag.png";
+import brandList2 from "../resources/brandList2.png";
 import product01 from "../resources/product01.png";
 import product02 from "../resources/product02.png";
 import product03 from "../resources/product03.png";
@@ -44,20 +44,24 @@ function Section5 () {
           </h2>
           <p className={styles.subTitle}>재고 · 상품 · 브랜드까지 본사가 책임지는 통합 공급 시스템</p>
         </div>
-        <div className={styles.imgBox}>
-          <img src={lineUp} alt="엄선된 라인업" className={styles.lineUpImg} />
-          <img src={modeling} alt="푸푸 제품 사진" className={styles.modelingImg} />
-          <ul className={styles.rightBox}>
-            <li className={styles.rightBoxEach}>
-              <p className={styles.rightBoxEachTitle}>상품 가짓수</p>
-              <p className={styles.rightBoxEachContent}>230종</p>
+        <div className={styles.centerBox}>
+          <p className={styles.lineUp}>엄선된 라인업</p>
+          <img src={shoppingBag} alt="쇼핑백 3d 아이콘" className={styles.shoppingBag} />
+          <ul className={styles.countBox}>
+            <li className={styles.countBoxEach}>
+              <p className={styles.countBoxEachTitle}>상품 가짓수</p>
+              <p className={styles.countBoxEachContent}>230종</p>
             </li>
-            <li className={styles.rightBoxEach}>
-              <p className={styles.rightBoxEachTitle}>총 상품 수</p>
-              <p className={styles.rightBoxEachContent}>2,850개</p>
+            <li className={styles.countBoxEach}>
+              <p className={styles.countBoxEachTitle}>총 상품 수</p>
+              <p className={styles.countBoxEachContent}>2,850개</p>
             </li>
           </ul>
+          <div className={styles.brandList}>
+            <img src={brandList2} alt="브랜드 목록 이미지" />
+          </div>
         </div>
+        {/* 기기 사진 제거
         <div className={styles.swiperBox}>
         <Swiper
           modules={[Autoplay]} 
@@ -87,10 +91,8 @@ function Section5 () {
           </SwiperSlide>
          ))} 
         </Swiper>
-        </div>
-        <div className={styles.brandList}>
-          <img src={brandList} alt="브랜드 목록 이미지" />
-        </div>
+        </div> */}
+        
       </div>
     </div>
   )
